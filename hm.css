@@ -1,0 +1,78 @@
+.cards {
+    display: grid;
+    grid-template-columns: 1.3fr 1.3fr 1fr ;
+    margin: 39px auto 0;
+    width: calc(280px * 4);
+    align-items: center;
+    margin-top: 300px;
+    
+  }
+  
+  .card {
+    box-shadow: 0 3px 10px 0 #9f3fd3;
+    cursor: pointer;
+    height: 280px;
+    position: relative;
+    align-items: center;
+    width: 243px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px #da94ff; 
+}
+  
+  .card h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .card.visited {
+    box-shadow: 0 3px 10px 2px #163832;
+  }
+  .banner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+    color: #daf1de;
+    background-color: #28104e;
+}
+  
+  @media (max-width: 1100px) {
+    .cards {
+      grid-template-columns: 1fr 1fr;
+      width: calc(280px * 2);
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .cards {
+      display: block;
+      width: 100vw;
+    }
+    .card {
+      margin: 0 auto 2rem;
+    }
+  }
+  .card-img-top{
+    width: 243px;
+    height: 140px;
+    align-items: center;
+  }
+  body {
+    
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ab24e4, #74b9ff);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+   
+}

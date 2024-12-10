@@ -1,0 +1,79 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; 
+    color: #ffffff; 
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); 
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #00ff00; 
+}
+
+.team, .project-guide {
+    margin: 20px 0;
+    padding: 20px;
+    background: #2a2a2a; 
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.team-member, .guide-member {
+    text-align: center;
+    margin: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-member:hover, .guide-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px rgba(0, 255, 0, 0.5); 
+}
+
+.team-member img, .guide-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #00c6ff; 
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.team-member img:hover, .guide-member img:hover {
+    transform: scale(1.1);
+    border-color: #00ff00;
+}
+
+.team-member h3, .guide-member h3 {
+    margin: 10px 0 5px;
+    color: #00ff00; 
+
+.team-member p, .guide-member p {
+    color: #cccccc; 
+} 
+
+.team-member:hover h3, .guide-member:hover h3 {
+    text-shadow: 0 0 10px #00ff00; 
+}
+
+.team-member:hover p, .guide-member:hover p {
+    color: #ffffff; 
+}
+}
