@@ -7,8 +7,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     
     if (username === 'admin' && password === '112233') {
         alert('Login successful!');
-        // Redirect to the home page
-        window.location.href = "hm.html"; // Replace 'home.html' with the actual path to your home page
+        
+        window.location.href = "hm.html"; 
     } else {
         document.getElementById('error-message').textContent = 'Invalid username or password.';
     }
